@@ -190,7 +190,7 @@ shinyServer(function(input, output, session) {
                   #axis.text.y = element_text(angle = 0, hjust = 1, size=12),
                   axis.text.y = element_blank(),
                   text = element_text(size=15), title = element_text(size=15)) +
-            xlab("Day of the Year") + ylab("Relative Return") + facet_wrap(~SASAP.Region, scale=scale)
+            xlab("Day of the Year") + ylab("Relative Return") + facet_wrap(~SASAP.Region, scale=scale, ncol = 2)
         
     },  height = 700, width = 600 )
     
@@ -214,7 +214,7 @@ shinyServer(function(input, output, session) {
                   #axis.text.y = element_text(angle = 0, hjust = 1, size=12),
                   axis.text.y = element_blank(),
                   text = element_text(size=15), title = element_text(size=15)) +
-            xlab("Day of the Year") + ylab("Relative Return") + facet_wrap(~Species, scale=scale)
+            xlab("Day of the Year") + ylab("Relative Return") + facet_wrap(~Species, scale=scale, ncol=2)
         
     },  height = 700, width = 600 )
    
